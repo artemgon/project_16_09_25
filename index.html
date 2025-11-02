@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Language Site</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Task 1 -->
+        <div class="language-section">
+            <button id="languageToggle">UA</button>
+            <div id="languageMessage" class="message hidden"></div>
+        </div> <!-- ВИПРАВЛЕНО: закриваючий тег -->
+
+        <h1 id="pageTitle">Registration</h1>
+
+        <form id="registrationForm">
+            <div class="input-group">
+                <input type="text" id="login" placeholder="Login" required>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="rememberMe">
+                <label id="rememberLabel" for="rememberMe">Remember Me</label>
+            </div>
+
+            <button type="submit" id="submitBtn">Register</button>
+        </form>
+
+        <!-- Task 2 -->
+        <div id="welcomeMessage" class="hidden"></div>
+
+        <!-- Task 3 -->
+        <div class="clear-section">
+            <button id="clearDataBtn">Clear all data</button>
+        </div>
+    </div> 
+
+    <script src="./main.js"></script>
+</body>
+</html>
